@@ -50,6 +50,7 @@ Python has built-in functions that all Python programs can call. These include `
 - Avoiding duplicating code is also useful when debugging and updating. Using a function makes it so only that function needs to be edited, and we don't have to search through the entire program to find each time we used that same block of code that needs to be changed.
 - An argument is the value passed when calling a function. A parameter is the variable inside the function.
 - Keyword arguments are often used for optional arguments to pass to a function call. The `print()` function has the keyword arguments `end=` and `sep=`.
+- Functions that return without a return statement return the `None` value.
 
 ### Global and Local Scopes
 - A variable in a function can have the same name as a variable outside of the function, but they are considered two seperate variables.
@@ -58,3 +59,7 @@ Python has built-in functions that all Python programs can call. These include `
 - Local variables, or variables in the local scope, are forgotten when that function ends. So in a sense, local variables are temporary. They won't exist after the function returns.
 - Code in a global scope can't use variables in the local scope, but code in a local scope can use global variables. Code in one function's local scope cannot use functions in another function's local scope.
 - If there is an assignment statement i.e. `count = 40` in the function, the variable is considered a local variable. If there is no assignment statement, it is considered a global variable. 
+
+## Handling Errors with Try and Except Statements
+- `try` and `except` statements can be used to keep a program running to completeion instead of crashing entirely when an error is encountered.
+- You can also have a simple `except` statement without specifying the error it catches, and it will catch all types of errors.
