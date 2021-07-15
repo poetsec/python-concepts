@@ -4,6 +4,61 @@ This repository contains Python files demonstrating basic Python concepts.
 ## Notes
 These are my notes on basic Python concepts taken during beginner Python courses such as Al Sweigart's course: Automate the Boring Stuff with Python Programming.
 
+## Data Types
+Data types are the classification and organization of data items. The `type()` function is used to determine the data type. 
+
+### Numeric
+Numeric data types are data that are numbers such as integers, floating numbers, or complex numbers. 
+
+#### Integers
+- Integers are represented by the `int` class. 
+- They can be positive or negative numbers.
+- No fractions or decimals. Whole numbers only.
+- There is no limit to how long an integer can be. 
+
+#### FLoats
+- Floats are represented by the `float` class.
+- Floats are real numbers with "floating point representation". In other words, floats are numbers with decimals. The digits after the decimal can be 0 or any other numeric value.
+- The character `e` or `E` followed by a positive or negative integer specifies scientific notation.
+
+#### Complex Numbers
+- Complex numbers are represented by the `complex` class. They are specified as a real part plus an imaginary part. For example, `43+7M`.
+
+### Sequence Type
+Sequences allow us to store multiple values in an organized way. Sequence data types in Python include strings, lists, and tuples.
+
+#### Strings
+- A string is a value that represents Unicode characters. 
+- Strings are put in single, double, or triple quotes. 
+- There is no character data type in Python. A character is just a string of one. 
+- Strings are represented by the `str` class. 
+
+#### Lists
+- A list is a value that contains values in an ordered sequence. The values inside of a list are called items.
+- An integer index for an item's position inside of the list is used to access that item i.e. `list[4]` would call the item at index 4. The first item is at index 0.
+- Lists start at 0 and go up, but you can also use negative integers. Negative integers start from the end of the list and go forward. `[-1]` refers to the last item in the list. 
+- An index calls a single item from a list while a slice calls multiple items from a list. The slice `[1:3]` would start at item 1 and go up to, but not including, item 3. 
+- You can leave out the values on either side of the semicolon when creating a slice. Leaving out the value before the semicolon will begin the slice at item 0. Leaving out the value after the semicolon will end the slice with the last item in the list. Leaving out both values will run the slice the entire length of the list.
+- There is a list function `list()` that takes a value and splits it up into a list.
+
+#### Tuples
+- A tuple is an ordered collection of itmes similar to a list. The difference is that tuples cannot be modified after being created. 
+- Tuples are represented by the `tuple` class.
+- Tuples can contain any number of elements and data types. 
+- When creating a tuple with a single element, you need to have a comma after the item to make it a tuple.
+
+### Booleans
+- A boolean is a data type with a `True` or `False` value. 
+- Non-boolean objects can be evaluated in boolean context and can be determined to be true or false. 
+
+### Sets
+- A set is an unordered collection of items that is iterable, mutable, and has no dupicate elements.
+- Sets are represented by the `set` class. 
+
+### Dictionaries
+- A dictionary is an unordered collection of data values that is used to store data values.
+- Dictionaries have a `key:value` pair. Each pair is seperated by a colon, and each key is seperated by a comma. 
+
 ## Flow Control
 
 ### Booleans
@@ -64,10 +119,3 @@ Python has built-in functions that all Python programs can call. These include `
 - `try` and `except` statements can be used to keep a program running to completeion instead of crashing entirely when an error is encountered.
 - You can also have a simple `except` statement without specifying the error it catches, and it will catch all types of errors.
 
-## Lists
-- A list is a value that contains values in an ordered sequence. The values inside of a list are called items.
-- An integer index for an item's position inside of the list is used to access that item i.e. `list[4]` would call the item at index 4. The first item is at index 0.
-- Lists start at 0 and go up, but you can also use negative integers. Negative integers start from the end of the list and go forward. `[-1]` refers to the last item in the list. 
-- An index calls a single item from a list while a slice calls multiple items from a list. The slice `[1:3]` would start at item 1 and go up to, but not including, item 3. 
-- You can leave out the values on either side of the semicolon when creating a slice. Leaving out the value before the semicolon will begin the slice at item 0. Leaving out the value after the semicolon will end the slice with the last item in the list. Leaving out both values will run the slice the entire length of the list.
-- There is a list function `list()` that takes a value and splits it up into a list.
