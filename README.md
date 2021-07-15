@@ -70,4 +70,4 @@ Python has built-in functions that all Python programs can call. These include `
 - Lists start at 0 and go up, but you can also use negative integers. Negative integers start from the end of the list and go forward. `[-1]` refers to the last item in the list. 
 - An index calls a single item from a list while a slice calls multiple items from a list. The slice `[1:3]` would start at item 1 and go up to, but not including, item 3. 
 - You can leave out the values on either side of the semicolon when creating a slice. Leaving out the value before the semicolon will begin the slice at item 0. Leaving out the value after the semicolon will end the slice with the last item in the list. Leaving out both values will run the slice the entire length of the list.
-- There is a list function (`list()`) that takes a value and splits it up into a list.
+- There is a list function `list()` that takes a value and splits it up into a list.
