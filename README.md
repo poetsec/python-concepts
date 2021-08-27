@@ -1,4 +1,5 @@
-# python-concepts
+# Python Concepts
+
 This repository contains Python files demonstrating basic Python concepts.
 
 ## Notes
